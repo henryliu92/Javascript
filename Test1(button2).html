@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+    
+    <body>
+    
+    <form>
+        <p>Enter 3 numbers below and then click the 'Work Out' button.</p>
+    <input type="number" id="input1"/>
+    <input type="number" id="input2"/>
+    <input type="number" id="input3"/>
+    </form>
+        
+        <div><button id="button1">Work Out</button></div>    
+    <div id="demo"></div>
+    
+        
+    <script>
+        var event1 = document.getElementById("button1");
+        event1.addEventListener('click', myfirst, false);
+        
+        function myfirst(){
+            var userinput1 = parseInt(document.getElementById("input1").value);
+            
+            var userinput2 = parseInt(document.getElementById("input2").value);
+            
+            var userinput3 = parseInt(document.getElementById("input3").value);
+            
+            document.getElementById("demo").innerHTML = (userinput1 + userinput2) * userinput3; 
+        } 
+        
+        </script>
+        
+    
+    </body>
+</html>

@@ -12,7 +12,10 @@
     <div id="demo"></div>
     
         
-    <script src="test.js"> </script>
+    <script> 
+  
+        
+    </script>
         
     
     </body>

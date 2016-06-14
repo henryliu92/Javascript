@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+    
+    <body>
+     <!--
+            Testing an if and else if statements
+        -->
+
+    <form>
+       <p>Enter a number below and then click the 'Click' button.</p>
+        <input type="number" id="input1"/>
+
+    </form>
+        <div><button id="button1">Click</button></div>    
+    <div id="demo"></div>
+    
+       <!--
+            Has to be logical order
+        -->      
+    <script>
+        var event1 = document.getElementById("button1");
+        event1.addEventListener('click', myfirst, false);
+        
+        function myfirst(){
+          var userinput1 = parseInt(document.getElementById("input1").value);
+           
+        if (userinput1 <0)
+            {
+                document.getElementById("demo").innerHTML = "number is negative";
+            }
+            else if (userinput1 <10)
+            {
+                document.getElementById("demo").innerHTML = "number is smaller than 10";
+            }  
+            else if (userinput1 >10)
+            {
+                document.getElementById("demo").innerHTML = "number is larger than 10";
+            }
+            else 
+            {
+                document.getElementById("demo").innerHTML= "You've haven't entered a number! Please enter a number.";
+            }
+        }
+        </script>
+        
+    
+    </body>
+</html>

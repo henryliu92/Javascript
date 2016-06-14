@@ -3,14 +3,10 @@
 
 <body>  
 
-
-       <p>Today's day and current time:</p>
+    <p>Today's day and current time:</p>
         
-    
-   
-        <div><button id="button">Today</button></div>    
+    <div><button id="button">Today</button></div>    
     <div id="demo"></div>
-
     
     <script>
  
@@ -23,8 +19,6 @@ event1.addEventListener('click', getDayAndTime, false);
 
 function getDayAndTime()
 {
-    
-    
     switch (today.getDay())
     {
     case 1:
@@ -50,19 +44,22 @@ function getDayAndTime()
         break;
     }
     time();
-
+    
+// 'time();' refers to the time function in a separate part but it is part of the 'function getDayAndTime()' function. 
 }
-    //time function from 'time();' from getDayAndTime function;
+    
+        //time function from 'time();' from getDayAndTime function;
     function time()   
         {
         var minutes = today.getMinutes();
         var hours = today.getHours();
         var time = hours + ":" + minutes;
     
-    //Orginal attemtpt;
+    //Orginal attempt;
         //var event1 = document.getElementById("button");
             //event1.addEventListener('click', time, false);
         //document.getElementById("").innerHTML = today.getDayAndTime;
+            
             document.getElementById("demo").innerHTML = "Today is " + day + " and the time is - " + time;
     }
         

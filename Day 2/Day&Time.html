@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>  
+
+
+       <p>Today's day and current time:</p>
+        
+    
+   
+        <div><button id="button">Today</button></div>    
+    <div id="demo"></div>
+
+    
+    <script>
+ 
+var today = new Date();
+var day = "";
+var event1 = document.getElementById("button");
+event1.addEventListener('click', getDayAndTime, false);
+
+
+
+function getDayAndTime()
+{
+    
+    
+    switch (today.getDay())
+    {
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+    case 7:
+        day = "Sunday";
+        break;
+    }
+    time();
+
+}
+    //time function from 'time();' from getDayAndTime function;
+    function time()   
+        {
+        var minutes = today.getMinutes();
+        var hours = today.getHours();
+        var time = hours + ":" + minutes;
+    
+    //Orginal attemtpt;
+        //var event1 = document.getElementById("button");
+            //event1.addEventListener('click', time, false);
+        //document.getElementById("").innerHTML = today.getDayAndTime;
+            document.getElementById("demo").innerHTML = "Today is " + day + " and the time is - " + time;
+    }
+        
+//document.getElementById("demo").innerHTML = "Today is " + day + "The time is - " + time;
+        
+        
+</script>
+
+    
+</body>
+</html>

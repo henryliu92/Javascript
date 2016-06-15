@@ -2,18 +2,20 @@
 <html>
 <body>
 
-<p id="message">(Message pending...)</p>
+<p id="message"></p>
 
 <script>
-    alert("This will show an alert message box");
-// - Creating an alert message using a function. 
+    alert("This will show an alert message");
+//'<p id' note (white) removed in order to show no text on the webpage while alert message appears. 
+    // - Creating an alert message using a function. 
 
     
 // - "" quotes were removed, can be re-added to automatically show a word on the web browser with a plus sign. 'return message' gives what you want displayed on a webpage on a web brower.  
-function myFunction(message) {
-    return message;
-}
-document.getElementById("message").innerHTML = myFunction("Red Alert!");
+    function myFunction(message) 
+    {
+        return message;
+    }
+    document.getElementById("message").innerHTML = myFunction("Red Alert!");
 </script>
 
 </body>

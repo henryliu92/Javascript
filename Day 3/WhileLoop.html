@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <P>Click the button to see the numbers 1 to 10 to loop through</P>
+    
+    <button onclick="whileButton()">See Numbers</button>
+    
+    <p id="whileDemo"></p>
+    
+    <script>
+    // Creating a while loop that displays the numbers 1 through to  10 onto the webpage. The ID and function 'whileButton' ID needs to match with the top ID and the button onclick ID otherwise nothing will be displayed on a web brower. 
+
+        function whileButton()
+        {
+        //Numbers (green) can be edited. Text needs to be blank. 
+            var text = "Numbers";
+            var i = 0;
+            while (i < 11){
+                text += "<br> Here is number --------------------------------------------------   " + i;
+                i++;
+            
+        }
+        document.getElementById("whileDemo").innerHTML = text;
+        }
+        
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+    
+<p>Click the button to loop through a block of code as long as 1 is less than 10.</p>
+
+<button onclick="dowhilebutton()">See Numbers</button>
+
+<p id="doWhileDemo"></p>
+
+<script>
+    //Creating a do while loop that displays the numbers from 1 to 10 onto the webpage.
+
+    function dowhilebutton() 
+    {
+        var text = ""
+        var i = 1;
+        do {
+            text += "<br>The number is -------------------------------------------------- " + i;
+            i++;
+        }
+        while (i < 11)  
+        document.getElementById("doWhileDemo").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A Nested Loop</p>
+<button onclick="nestLoopButton()">Nested Loop</button>
+
+    <p id="nestLoop"></p> 
+
+<script>
+// Creating a nested loop from 1-10
+    
+    //   Nested - sitting inside one thing
+    
+function nestLoopButton() 
+    {
+        var iPlus1 = 0;
+        var jplus1 = 0;
+        
+        var output = ""
+        for(var i = 0;i < 10; i++)
+            {
+                for(var j = 0;j < 2; j++)
+                    {
+                        jplus1 = j + 1;
+                        output += "&nbsp &nbsp &nbsp &nbsp Inner looper number is " + jplus1 + "<br>";     
+                    }
+                iPlus1 = i + 1;
+                output += "&nbsp &nbsp &nbsp &nbsp Outer Looper number is " + iPlus1 + "<br>";
+            }
+        
+        
+        document.getElementById("nestLoop").innerHTML = output;
+    }
+
+</script>
+    
+</body>
+</html>

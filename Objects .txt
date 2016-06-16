@@ -41,3 +41,11 @@ function Hotel (name, rooms, booked)
 {
 this.name =name;
 this.room =room;
+this.booking =booking;
+this.availability = function ()
+	{
+
+
+
+
+.push

@@ -1,0 +1,43 @@
+properties 					Methods
+car.name = Fiat ntext				carstart.()
+car.model = 500 value				cardrive.()
+car.weight = 850kg				carbrake.()
+car.color = white				carstop.()
+
+make, model, colour = properties
+
+stop, drive, break, honk = behaviour
+
+
+
+//object literal
+var person = 
+{
+firstName:"first",
+lastName:"Sure",
+age:25,
+eyeColour:"colour",
+};
+
+//Object constructor
+function Hotel (name, room, booking)
+{
+this.name = name;
+this.room = room;
+this.booking = booking;
+}
+
+//creating an instance of an object using a constructor 
+var londonHotel = new Hotel("London", 100, 50);
+
+//setting the value of an object property
+LondonHotel.booked = 68;
+
+//setting the value of an object property
+var myHotelName = londonHotel.name;
+
+//object with Properties and a method:
+function Hotel (name, rooms, booked)
+{
+this.name =name;
+this.room =room;

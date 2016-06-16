@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>   
+<body>
+ 
+<!-- Creating an Interest Calculator, with 3 inputs; amount to borrow, interest rate and length of the time of loan. -->
+    <h1>Interest Rate Calculator.</h1>
+    <p>Use the Calculator to work out your interest rate.</p>
+    Amount: <p></p><input type="number" id="amount"/><p></p>
+    Interest rate:<p></p><input type="number" id="rate"/><p></p>
+    Length (years): <p></p> <input type="number" id="length"/><p></p>
+            
+    <div><button id="interest">Work Out</button></div>    
+    <div id="findInterest"></div>
+    <p></p>
+    <div id="monthlyInterest"></div>
+    
+    
+    <script>
+        var event1 = document.getElementById("interest");
+        event1.addEventListener('click', calculateinterest, false);
+        
+        function calculateinterest()
+        {
+            var newAmount = parseInt(document.getElementById("amount").value);
+            var newRate = parseInt(document.getElementById("rate").value);
+            var length = parseInt(document.getElementById("length").value);
+            result = document.getElementById("findInterest");
+            result.innerHTML = "Your interest payment is  ---------- £  " + (newAmount * newRate * length / 100) ;
+            
+            monthlyinterest();
+        } 
+        
+        function monthlyinterest()
+        {
+            var newAmount = parseInt(document.getElementById("amount").value);
+            var newRate = parseInt(document.getElementById("rate").value);
+            var length = parseInt(document.getElementById("length").value);
+            result = document.getElementById("monthlyInterest");                        
+            result.innerHTML = "Your Monthly Interest is ---------- £ " + (newAmount * newRate * length / 100/ 12);
+
+        } 
+  
+    </script>
+        
+    
+    </body>
+</html>

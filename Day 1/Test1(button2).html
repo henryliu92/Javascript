@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>Working out a sum.</head>
-<body>
+<head></head>
+
     
-<!-- Collect 3 numbers from the user (a,b,c) and display on the webpage the difference between the values of the 2 calculations - (a + b) * c --> 
-    <p>Enter 3 numbers below and then click the 'Work Out' button.</p>
-    <input type="number" id="input1"/>
-    <input type="number" id="input2"/>
+    <body>
+    
+    <form>
+        <p>Enter 3 numbers below and then click the 'Work Out' button.</p>
+    <input type="number" id="input1"/> + 
+    <input type="number" id="input2"/> x
     <input type="number" id="input3"/>
-            
-        <div><button id="button1">Work Out</button></div>    
+    </form>
+    <br>
+    <br>
+    <br>
+        
+    <div><button id="button1">Work Out</button></div>    
+    <br><br>
     <div id="demo"></div>
-    
     <script>
         var event1 = document.getElementById("button1");
         event1.addEventListener('click', myfirst, false);
-// - You can have as many 'userinput' as you want providing that the new inputs are identified in the input id above. The '+' and '*' can be changed to make it work out a different sum. 
-        
+//You can have as many 'userinput' as you want providing that the new inputs are identified in the input id above.         
         function myfirst(){
           var userinput1 = parseInt(document.getElementById("input1").value);
             
